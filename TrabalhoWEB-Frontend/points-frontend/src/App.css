@@ -1,0 +1,164 @@
+* {
+  font-family: 'Bitter', serif;
+  text-align: start;
+  padding: 0px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.f-w-bold{
+  font-weight: bold;
+}
+
+.emphasis{
+  color: forestgreen;
+}
+
+.box{
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+.box-invalid{
+  border: 1px solid #ff0000;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.form-check{
+  padding-left: 1rem !important;
+}
+
+.form-check .form-check-input{
+  margin-top: 0.8rem;
+  margin-left: 0 !important;
+  cursor: pointer !important;
+}
+
+.form-check-label{
+  padding: 0.5rem 1rem;
+  width: 90%; 
+  cursor: pointer !important;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.check-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: .875em;
+  color: #dc3545;
+}
+
+.section-initial{
+  height: auto;
+}
+
+.height-find-points{
+  height: 100vh;
+}
+
+.m-col{
+  margin: 8rem 0rem 4rem 0rem !important;
+}
+
+.bg-dark-2{
+  background-color: #2F3032;
+}
+
+.p-text{
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.bt-w-auto{
+  width: 100%;
+}
+
+.box-shadow{
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.16);
+}
+
+.box-border{
+  border-radius: 2rem;
+}
+
+.img-fit{
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.mt-aux{
+  margin-top: 16px !important;
+}
+
+@media (max-width: 768px) { /* use the max to specify at each container level */
+  
+  .specifictd {    
+      width:360px;  /* adjust to desired wrapping */
+      display:table;
+      white-space: pre-wrap; /* css-3 */
+      white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+      white-space: -pre-wrap; /* Opera 4-6 */
+      white-space: -o-pre-wrap; /* Opera 7 */
+      word-wrap: break-word; /* Internet Explorer 5.5+ */
+  }
+}
+
+@media (min-width: 768px) { 
+  .bt-w-auto{
+    width: auto;
+  }  
+
+  .section-initial{
+    height: 100vh;
+  }
+
+  .form-check-label{
+    width: auto;  
+  }
+
+  .mt-aux{
+    margin-top: 28px !important;
+  }
+}
+
