@@ -21,19 +21,19 @@ cd Trabalho-de-Web
 
 ## Passos para rodar o Backend
 
-primeiramente acesse a pasta do backend:
+Primeiramente acesse a pasta do backend:
 
 ```bash
 cd TrabalhoWEB-Backend
 ```
 
-agora intale as dependências com o npm:
+Instale as dependências com o npm:
 
 ```bash
 npm i
 ```
 
-apos isso execute:
+Após isso execute:
 
 ```bash
 docker-compose up -d
@@ -42,7 +42,7 @@ docker-compose up -d
 npx prisma db push
 ```
 
-e finalmente... Para iniciar o servidor, execute o seguinte comando:
+E finalmente... Para iniciar o servidor, execute o seguinte comando:
 
 ```bash
 npm run dev
@@ -52,13 +52,13 @@ npm run dev
 
 ## Passos para rodar o Frontend
 
-em outro terminal abra a pasta do frontend:
+Em outro terminal abra a pasta do frontend:
 
 ```bash
 cd TrabalhoWEB-Backend/points-frontend
 ```
 
-agora intale as dependências com o npm:
+Instale as dependências com o npm:
 
 ```bash
 npm i
