@@ -13,7 +13,7 @@
 Clone o repositório e instale as dependêcias
 
 ```bash
-git clone https://github.com/elisionara/Trabalho-de-Web
+git clone https://github.com/elisionara/Trabalho-de-Web.git
 cd Trabalho-de-Web
 ```
 
