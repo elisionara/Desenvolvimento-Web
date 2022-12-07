@@ -1,0 +1,553 @@
+{
+	"info": {
+		"_postman_id": "3290d748-1b89-4446-978c-609339985c00",
+		"name": "EcoPoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24485756"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ponto Praça da Igreja Matriz\",\r\n    \"cep\": \"62900-000\",\r\n    \"city\": \"Russas\",\r\n    \"address\": \"Ex: Av. Dom Lino\",\r\n    \"number\": \"Sem número\",\r\n    \"pointReference\": \"Proximo a igreja matriz\",\r\n    \"phone\": \"(88) 99876-5432\",\r\n    \"mail\": \"email@gmail.com\",\r\n    \"materials\": [\"\", \"\",  \"vidro\", \"\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/points",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"points"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ponto Praça da Igreja Matriz\",\r\n    \"cep\": \"62900-000\",\r\n    \"city\": \"Russas\",\r\n    \"address\": \"Av. Dom Lino\",\r\n    \"number\": \"Sem número\",\r\n    \"pointReference\": \"Proximo a igreja matriz\",\r\n    \"phone\": \"(88) 99876-5432\",\r\n    \"mail\": \"email@gmail.com\",\r\n    \"materials\": [\"\", \"\",  \"vidro\", \"\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/points",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "260"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"104-DloklVTD6tfg+TuHDVsQHoIjuCA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 17:04:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 137,\n    \"name\": \"Ponto Praça da Igreja Matriz\",\n    \"cep\": \"62900-000\",\n    \"city\": \"Russas\",\n    \"address\": \"Av. Dom Lino\",\n    \"number\": \"Sem número\",\n    \"pointReference\": \"Proximo a igreja matriz\",\n    \"phone\": \"(88) 99876-5432\",\n    \"mail\": \"email@gmail.com\",\n    \"materials\": [\n        \"\",\n        \"\",\n        \"vidro\",\n        \"\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetUnique",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/points/137",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"points",
+						"137"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetUnique",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/points/137",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points",
+								"137"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "260"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"104-DloklVTD6tfg+TuHDVsQHoIjuCA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 17:05:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 137,\n    \"name\": \"Ponto Praça da Igreja Matriz\",\n    \"cep\": \"62900-000\",\n    \"city\": \"Russas\",\n    \"address\": \"Av. Dom Lino\",\n    \"number\": \"Sem número\",\n    \"pointReference\": \"Proximo a igreja matriz\",\n    \"phone\": \"(88) 99876-5432\",\n    \"mail\": \"email@gmail.com\",\n    \"materials\": [\n        \"\",\n        \"\",\n        \"vidro\",\n        \"\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetFilter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/points?city=russas&materials=papel-vidro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"points"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "russas"
+						},
+						{
+							"key": "materials",
+							"value": "papel-vidro"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetFilter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/points?city=russas&materials=papel-vidro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "russas"
+								},
+								{
+									"key": "materials",
+									"value": "papel-vidro"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "262"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"106-OjAjQ0P8JSISaLtBGnkDkK8PayQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 17:05:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 137,\n        \"name\": \"Ponto Praça da Igreja Matriz\",\n        \"cep\": \"62900-000\",\n        \"city\": \"Russas\",\n        \"address\": \"Av. Dom Lino\",\n        \"number\": \"Sem número\",\n        \"pointReference\": \"Proximo a igreja matriz\",\n        \"phone\": \"(88) 99876-5432\",\n        \"mail\": \"email@gmail.com\",\n        \"materials\": [\n            \"\",\n            \"\",\n            \"vidro\",\n            \"\"\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/points",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"points"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Read",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/points",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "522"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20a-gSSI2WsC3c7+I3OANwhq2HvJidM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 17:10:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 138,\n        \"name\": \"Ponto universitário de coleta\",\n        \"cep\": \"62900-000\",\n        \"city\": \"Russas\",\n        \"address\": \"R. Felipe Santiago\",\n        \"number\": \"411\",\n        \"pointReference\": \"Proximo a policlínica\",\n        \"phone\": \"(88) 3411-6023\",\n        \"mail\": \"russas@ufc.br\",\n        \"materials\": [\n            \"papel\",\n            \"plastico\",\n            \"\",\n            \"\"\n        ]\n    },\n    {\n        \"id\": 137,\n        \"name\": \"Ponto Praça da Igreja Matriz\",\n        \"cep\": \"62900-000\",\n        \"city\": \"Russas\",\n        \"address\": \"Ex: Av. Dom Lino\",\n        \"number\": \"Sem número\",\n        \"pointReference\": \"Proximo a igreja matriz\",\n        \"phone\": \"(88) 99876-5432\",\n        \"mail\": \"email@gmail.com\",\n        \"materials\": [\n            \"\",\n            \"\",\n            \"vidro\",\n            \"\"\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ponto Praça da Igreja Matriz (Teste Mudança)\",\r\n    \"cep\": \"62900-000\",\r\n    \"city\": \"Russas\",\r\n    \"address\": \"Av. Dom Lino\",\r\n    \"number\": \"200\",\r\n    \"pointReference\": \"Proximo a igreja matriz\",\r\n    \"phone\": \"(88) 99876-5432\",\r\n    \"mail\": \"email@gmail.com\",\r\n    \"materials\": [\"papel\", \"\",  \"vidro\", \"metal\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/points/138",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"points",
+						"138"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ponto Praça da Igreja Matriz (Teste Mudança)\",\r\n    \"cep\": \"62900-000\",\r\n    \"city\": \"Russas\",\r\n    \"address\": \"Av. Dom Lino\",\r\n    \"number\": \"200\",\r\n    \"pointReference\": \"Proximo a igreja matriz\",\r\n    \"phone\": \"(88) 99876-5432\",\r\n    \"mail\": \"email@gmail.com\",\r\n    \"materials\": [\"papel\", \"\",  \"vidro\", \"metal\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/points/138",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points",
+								"138"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "275"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"113-gn4p8yaTdffpP3ChESUJ8U87ngk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 17:12:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 138,\n    \"name\": \"Ponto Praça da Igreja Matriz (Teste Mudança)\",\n    \"cep\": \"62900-000\",\n    \"city\": \"Russas\",\n    \"address\": \"Av. Dom Lino\",\n    \"number\": \"200\",\n    \"pointReference\": \"Proximo a igreja matriz\",\n    \"phone\": \"(88) 99876-5432\",\n    \"mail\": \"email@gmail.com\",\n    \"materials\": [\n        \"papel\",\n        \"\",\n        \"vidro\",\n        \"metal\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/points/138",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"points",
+						"138"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/points/138",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points",
+								"138"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 17:13:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "104"
+		}
+	]
+}
