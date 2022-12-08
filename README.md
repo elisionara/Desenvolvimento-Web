@@ -55,7 +55,7 @@ npm run dev
 Em outro terminal abra a pasta do frontend:
 
 ```bash
-cd TrabalhoWEB-Backend/points-frontend
+cd TrabalhoWEB-Frontend/points-frontend
 ```
 
 Instale as dependências com o npm:
