@@ -1,4 +1,7 @@
-# Trabalho-de-Web
+# Desenvolvimento Web
+### Repositório criado para a disciplina de Desenvolvimento Web.
+
+#
 
 ## Requerimentos
 
